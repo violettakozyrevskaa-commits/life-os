@@ -1,0 +1,47 @@
+@media (max-width:1080px){
+  .search input{width:190px}
+  .gres{width:330px}
+}
+@media (max-width:900px){
+  .sidebar{position:fixed;left:0;top:0;bottom:0;transform:translateX(-104%);transition:transform .28s cubic-bezier(.4,0,.2,1);
+    box-shadow:0 0 60px rgba(0,0,0,.35);width:270px;flex-basis:270px}
+  .sidebar.open{transform:none}
+  .only-mob{display:inline-flex}
+  .view{padding:16px 14px 96px}
+  .topbar{padding:10px 14px;gap:9px}
+  .clock{display:none}
+  .search input{width:100%}
+  .search{flex:1}
+  .gres{width:min(94vw,360px);right:0;left:auto}
+  .qa-txt{display:none}
+  .btn.primary#qaBtn{padding:8px 11px}
+  .tb-title h1{font-size:16px}
+  .tb-title span{display:none}
+  .mnav{display:flex;position:fixed;left:10px;right:10px;bottom:10px;z-index:120;background:var(--card);
+    border:1px solid var(--border);border-radius:20px;padding:7px;gap:3px;box-shadow:var(--shadow)}
+  .mnav button{flex:1;border:none;background:none;color:var(--muted);display:flex;flex-direction:column;align-items:center;
+    gap:3px;font-size:10px;font-family:inherit;cursor:pointer;padding:6px 2px;border-radius:14px;transition:all var(--t)}
+  .mnav button svg{width:20px;height:20px}
+  .mnav button.on{background:var(--primary-soft);color:var(--primary);font-weight:600}
+  .sheet{top:auto;bottom:84px;right:10px;left:10px;width:auto;max-height:62vh}
+  .pomo{right:10px;left:10px;width:auto;bottom:84px}
+  .form{grid-template-columns:1fr}
+  .grid,.grid.wide{grid-template-columns:1fr}
+  .grid.cols2{grid-template-columns:1fr}
+  .cal-c{min-height:66px;padding:5px}
+  .ev{font-size:9.5px;padding:1px 4px}
+  .cal-c .ev:nth-child(n+4){display:none}
+  .toasts{left:10px;right:10px;bottom:84px;align-items:stretch}
+  .toast{max-width:none}
+  .modal{max-height:94vh;border-radius:20px}
+  .modal-b{padding:15px}
+  .hday{width:38px;height:38px}
+  .page-head h2{font-size:20px}
+  .tbl th,.tbl td{padding:9px 8px;font-size:12.5px}
+  .donut-wrap .chart-box{flex:1;max-width:none}
+}
+@media (max-width:420px){
+  .hday{width:34px;height:34px}
+  .brand-t small{display:none}
+}
+@media print{.sidebar,.topbar,.mnav,.toasts{display:none}.view{padding:0}}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru" data-theme="midnight" data-mode="dark" data-anim="on">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>LIFE OS — Моя система жизни</title>
+<meta name="description" content="LIFE OS — личная система управления жизнью: день, привычки, цели, спорт, книги, финансы, семья, учёба.">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="themes.css">
+<link rel="stylesheet" href="responsive.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='13' fill='none' stroke='%235aa9ff' stroke-width='3'/><circle cx='16' cy='16' r='4' fill='%235aa9ff'/></svg>">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="logo"><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="16" cy="16" r="4" fill="currentColor"/></svg></div>
+      <div class="brand-t"><b>LIFE OS</b><small>Моя система жизни</small></div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="side-foot">
+      <button class="btn ghost w100" id="pomoBtn"></button>
+      <button class="btn ghost w100" id="themeQuick"></button>
+    </div>
+  </aside>
+
+  <div class="main">
+    <header class="topbar">
+      <button class="btn icon only-mob" id="menuBtn" aria-label="Меню"></button>
+      <div class="tb-title"><h1 id="viewTitle">Мой день</h1><span id="viewSub" class="muted"></span></div>
+      <div class="tb-right">
+        <div class="clock" id="clock"></div>
+        <div class="search">
+          <span class="s-ico"></span>
+          <input id="gsearch" placeholder="Поиск: задачи, заметки, книги, цели…" autocomplete="off">
+          <div id="gres" class="gres hidden"></div>
+        </div>
+        <button class="btn icon" id="bellBtn" aria-label="Уведомления"><span class="dot hidden" id="bellDot"></span></button>
+        <button class="btn primary" id="qaBtn"><span class="qa-plus">+</span><span class="qa-txt">Быстро</span></button>
+        <button class="avatar" id="avatarBtn" title="Профиль"></button>
+      </div>
+    </header>
+    <main class="view" id="view"></main>
+  </div>
+</div>
+
+<nav class="mnav" id="mnav"></nav>
+<div id="modalRoot"></div>
+<div class="toasts" id="toastRoot"></div>
+<div class="sheet hidden" id="notifPanel"></div>
+<div class="pomo hidden" id="pomo"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+<script src="storage.js"></script>
+<script src="app.js"></script>
+<script src="navigation.js"></script>
+<script src="habits.js"></script>
+<script src="tasks.js"></script>
+<script src="sports.js"></script>
+<script src="goals.js"></script>
+<script src="books.js"></script>
+<script src="shopping.js"></script>
+<script src="family.js"></script>
+<script src="finance.js"></script>
+<script src="calendar.js"></script>
+<script src="education.js"></script>
+<script src="notes.js"></script>
+<script src="analytics.js"></script>
+<script src="settings.js"></script>
+</body>
+</html>
